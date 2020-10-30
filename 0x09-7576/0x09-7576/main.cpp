@@ -33,6 +33,8 @@ int main(int argc, const char * argv[]) {
             if(nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
             if(dist[nx][ny] >= 0) continue;
             
+            cout << dist[cur.first][cur.second] << '\n';
+            
             dist[nx][ny] = dist[cur.first][cur.second] + 1;
             Q.push({nx, ny});
         }
