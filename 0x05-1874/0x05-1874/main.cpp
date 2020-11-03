@@ -27,9 +27,17 @@ int main(int argc, const char * argv[]) {
         }
     }
     
-    if (!S.empty()) printf("NO\n");
-    else {
-        for (int i = 0; i < C.size(); i++) cout << C[i];
+    for(char c: C) cout << c << '\n';
+    
+    
+    for(auto i=0; i < S.size(); i++) {
+        cout << S[i] << '\n';
+    }
+    
+    if (!S.empty()) {
+        cout << "NO\n";
+    } else {
+        for (int i = 0; i < C.size(); i++) cout << C[i] << '\n';
     }
     
     return 0;
