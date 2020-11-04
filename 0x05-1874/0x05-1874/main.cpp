@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     
     for (int i = 0; i < count; i++) cin >> arr[i];
     
-    for (int i = 0; i <= count; i++) {
+    for (int i = 1; i <= count; i++) {
         S.push(i);
         C.push_back('+');
         
@@ -25,13 +25,6 @@ int main(int argc, const char * argv[]) {
             C.push_back('-');
             j++;
         }
-    }
-    
-    for(char c: C) cout << c << '\n';
-    
-    
-    for(auto i=0; i < S.size(); i++) {
-        cout << S[i] << '\n';
     }
     
     if (!S.empty()) {
