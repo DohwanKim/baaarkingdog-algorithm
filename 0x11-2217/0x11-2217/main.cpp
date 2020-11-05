@@ -21,8 +21,9 @@ int main(int argc, const char * argv[]) {
     int result = 0;
     for(int i=1; i<=N; i++) {
         result = max(result, V[N-i]*i);
-        cout << V[N-i]*i << '\n';
     }
+    
+    cout << result << '\n';
     
     return 0;
 }
