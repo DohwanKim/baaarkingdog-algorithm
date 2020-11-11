@@ -2,6 +2,7 @@
 using namespace std;
 
 long long POW(long long a, long long b, long long m) {
+    cout << b << '\n';
     if(b==1) return a % m;
     long long val = POW(a, b/2, m);
     val = val * val % m;
